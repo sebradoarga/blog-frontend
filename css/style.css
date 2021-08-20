@@ -9,6 +9,10 @@
     font-family: sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 h2, h3, h4, button, a {
     font-family: "Alumni Sans", sans-serif;
 }
@@ -169,7 +173,7 @@ header nav ul li:hover{
 
 .articles article p {
     margin-top: 20px;
-    overflow: auto;
+    overflow: hidden;
     text-align: justify;
 }
 
@@ -291,7 +295,7 @@ header nav ul li:hover{
 }
 
 #newsletter form input {
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 10px;
 }
 
@@ -299,8 +303,19 @@ header nav ul li:hover{
     height: 30px;
 }
 
+select {
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
 .checkbox {
     margin-top: 20px;
+}
+
+#newsletter form input[type="checkbox"]{
+    transform: scale(1.2);
+    margin-right: 8px;
 }
 
 #newsletter form input[type="submit"]{
@@ -340,4 +355,46 @@ footer nav ul li i {
 footer nav ul li i:hover {
     transform: scale(1.4);
     transition: 0.3s ease;
+}
+
+@media (max-width: 1000px){
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articles article{
+        width: 80%;
+        min-width: 200px;
+        max-width: 500px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .articles article img {
+        max-width: 300px;
+    }
+
+    .articles article p {
+        max-width: 300px;
+    }
+
+    .employees {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employees article{
+        width: 80%;
+        min-width: 200px;
+        max-width: 500px;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .employees article p {
+        max-width: 300px;
+    }
+
+
 }
