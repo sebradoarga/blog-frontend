@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap');
+
+/* UTILITIES */
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+h2, h3, h4, button, a {
+    font-family: "Alumni Sans", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(-45deg, #575A89, #CC74AB);
+}
+
+header *{
+    color: white;
+}
+
+header h1 {
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header nav {
+    width: 300px;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    font-size: 30px;
+}
+
+header nav ul li:hover{
+    transform: scale(1.1);
+}
+
+/* INDEX */
+
+.hero {
+    width: 100%;
+    display: flex;
+}
