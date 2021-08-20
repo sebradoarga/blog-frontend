@@ -22,11 +22,28 @@ a {
     color: #222;
 }
 
+button {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #575A89;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.2s ease;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 40px;
     background: linear-gradient(-45deg, #575A89, #CC74AB);
 }
 
@@ -58,11 +75,105 @@ header nav ul li {
 
 header nav ul li:hover{
     transform: scale(1.1);
+    transition: 0.3s ease;
+
 }
 
 /* INDEX */
 
+/* HERO SECTION */
+
 .hero {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
+
+.article-preview-text {
+    padding: 40px 20px;
+    width: 40%;
+}
+
+.article-preview-text h2{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.article-preview-text p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.article-preview-text button {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.hero img {
+    width: 40%;
+    position: relative;
+    top: 100px;
+}
+
+/* READ MORE SECTION */
+
+.read-more-section {
+    margin-top: 70px;
+    padding: 60px 40px;
+    background: linear-gradient(-135deg, #575A89, #CC74AB);
+}
+
+.read-more-section h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.articles {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+    max-width: 1200px;
+}
+
+.articles article {
+    background: white;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px #575A89;
+    height: 530px;
+}
+
+.articles article img {
+    width: 85%;
+}
+
+.articles article h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.articles article p {
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.articles article button {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* Our Team Section */
