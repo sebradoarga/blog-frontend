@@ -255,8 +255,8 @@ header nav ul li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: linear-gradient(-135deg, #575A89, #CC74AB);
 }
 
@@ -356,6 +356,120 @@ footer nav ul li i:hover {
     transform: scale(1.4);
     transition: 0.3s ease;
 }
+
+/* BLOG PAGE */
+
+.content-container {
+    display: flex;
+    align: flex-start;
+    justify-content: space-between;
+}
+
+.blog-main {
+    width: 85%;
+    margin: 40px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-main h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #575A89;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+.our-blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.our-blog-section h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.our-blog-section article {
+    padding: 20px 20px;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.our-blog-section article img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.blog-article-preview-content {
+    margin-left: 20px;
+    width: 60%;
+}
+
+.blog-article-preview-content h4 {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.blog-article-preview-content h4 a {
+    color: #575A89;
+}
+
+.blog-article-preview-content p {
+    margin-top: 10px;
+}
+
+aside {
+    width: 15%;
+    background: #EEEDFF;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+aside h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    background: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: #8B8CBF;
+    color: white;
+}
+
+aside ul {
+    border-left: 3px solid #8B8CBF;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+aside ul li {
+    font-size: 24px;
+}
+
+aside ul li:hover {
+    background: #8B8CBF;
+    color: white;
+    padding-left: 10px;
+}
+
+aside ul li:hover a {
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1000px){
     .articles {
