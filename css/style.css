@@ -156,6 +156,7 @@ header nav ul li:hover{
 
 .articles article img {
     width: 85%;
+    border-radius: 5px;
 }
 
 .articles article h3 {
@@ -169,6 +170,7 @@ header nav ul li:hover{
 .articles article p {
     margin-top: 20px;
     overflow: auto;
+    text-align: justify;
 }
 
 .articles article button {
@@ -177,3 +179,64 @@ header nav ul li:hover{
 }
 
 /* Our Team Section */
+
+#our-team {
+    width: 100%;
+    padding: 60px 40px;
+}
+
+#our-team h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+}
+
+.employees {
+    display: flex;
+    margin-top: 60px;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.employees article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 3px solid #575A89;
+    padding: 0 20px 30px 20px;
+    border-radius: 20px;
+}
+
+.employees article img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    position: relative;
+    bottom: 50px;
+    border: 5px solid rgb(175, 175, 175);
+}
+
+.employees article h3 {
+    font-size: 40px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.employees article h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.employees article p {
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.employees article button {
+    margin-top: 30px;
+    font-size: 20px;
+}
