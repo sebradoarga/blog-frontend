@@ -22,7 +22,7 @@ a {
     color: #222;
 }
 
-button {
+button, input[type="submit"] {
     font-weight: bold;
     letter-spacing: 2px;
     padding: 10px;
@@ -33,9 +33,9 @@ button {
     text-transform: capitalize;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     cursor: pointer;
-    transform: scale(0.9);
+    transform: scale(0.98);
     transition: 0.2s ease;
 }
 
@@ -223,20 +223,121 @@ header nav ul li:hover{
     font-size: 40px;
     margin-top: -30px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .employees article h4 {
     font-size: 25px;
     text-align: center;
+    letter-spacing: 1.5px;
 }
 
 .employees article p {
     margin-top: 20px;
     width: 70%;
     text-align: center;
+    line-height: 25px;
 }
 
 .employees article button {
     margin-top: 30px;
     font-size: 20px;
+}
+
+/* NEWSLETTER */
+
+#newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: linear-gradient(-135deg, #575A89, #CC74AB);
+}
+
+.newsletter-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.newsletter-container h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.newsletter-container h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+#newsletter form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#newsletter form label {
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#newsletter form input {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#newsletter form input[type="text"], #newsletter form input[type="email"] {
+    height: 30px;
+}
+
+.checkbox {
+    margin-top: 20px;
+}
+
+#newsletter form input[type="submit"]{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 80%;
+    align-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #222;
+}
+
+footer *{
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav ul li i {
+    transform: scale(1.3);
+}
+
+footer nav ul li i:hover {
+    transform: scale(1.4);
+    transition: 0.3s ease;
 }
