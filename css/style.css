@@ -353,7 +353,7 @@ footer nav ul li i {
 }
 
 footer nav ul li i:hover {
-    transform: scale(1.4);
+    color: #CC74AB;
     transition: 0.3s ease;
 }
 
@@ -468,6 +468,64 @@ aside ul li:hover a {
     color: white;
 }
 
+
+/* ARTICLE PAGE */
+
+.article-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.article-main h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    width: 50%;
+    text-align: center;
+}
+
+.article-main h2::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    left:150px;
+    top: 220px;
+    background: linear-gradient(-90deg, #575a8975, #cc74aa77);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.article-main h2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    right: 200px;
+    bottom: -400px;
+    background: linear-gradient(90deg, #575a8977, #cc74aa7a);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+
+.article-main img {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.article-main p {
+    width: 60%;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+    text-indent: 50px;
+}
 
 /* MEDIA QUERIES */
 
