@@ -709,6 +709,16 @@ aside ul li:hover a {
         min-width: 250px;
     }
 
+    aside ul li:hover {
+        background: none;
+        padding-left: 0;
+        transform: scale(1.1);
+    }
+
+    aside ul li:hover a {
+        color:#222;
+    }
+
     /* ARTICLE */
 
     .article-main h2 {
