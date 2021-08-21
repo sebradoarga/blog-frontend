@@ -670,4 +670,58 @@ aside ul li:hover a {
     #newsletter form input[type="submit"] {
         font-size: 15px;
     }
+
+    /* BLOG PAGE */
+    .content-container {
+        flex-direction: column-reverse;
+    }
+
+    .blog-main {
+        width: 100%;
+    }
+
+    .our-blog-section article{
+        width: 100%;
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    aside h5 {
+        background: none;
+        color: black;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    aside ul {
+        display: flex;
+        align-items: center;
+        border: none;
+        margin: 0;
+        justify-content: space-between;
+        width: 60%;
+        min-width: 250px;
+    }
+
+    /* ARTICLE */
+
+    .article-main h2 {
+        width: 80%;
+    }
+
+    .article-main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-main p {
+        width: 90%;
+    }
+
 }
