@@ -128,6 +128,9 @@ header nav ul li:hover{
     margin-top: 70px;
     padding: 60px 40px;
     background: linear-gradient(-135deg, #575A89, #CC74AB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .read-more-section h2{
@@ -187,6 +190,9 @@ header nav ul li:hover{
 #our-team {
     width: 100%;
     padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #our-team h2 {
@@ -272,16 +278,18 @@ header nav ul li:hover{
 .newsletter-container h2 {
     font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .newsletter-container h3 {
     font-size: 30px;
     text-transform: capitalize;
     margin-top: 10px;
+    text-align: center;
 }
 
 #newsletter form {
-    width: 450px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -292,6 +300,7 @@ header nav ul li:hover{
     margin-top: 20px;
     font-size: 16px;
     margin-bottom: 5px;
+    line-height: 23px;
 }
 
 #newsletter form input {
@@ -372,6 +381,7 @@ footer nav ul li i:hover {
     margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
+    min-height: 84vH;
 }
 
 .blog-main h2 {
@@ -494,7 +504,7 @@ aside ul li:hover a {
     height: 100px;
     display: block;
     position: absolute;
-    left:150px;
+    left:10%;
     top: 220px;
     background: linear-gradient(-90deg, #575a8975, #cc74aa77);
     border-radius: 100%;
@@ -589,6 +599,7 @@ aside ul li:hover a {
     .employees {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .employees article{
@@ -634,5 +645,29 @@ aside ul li:hover a {
 
     .article-main h2::after {
         display: none;
+    }
+}
+
+@media (max-width: 600px){
+    header {
+        flex-direction: column;
+    }
+
+    /* INDEX PAGE */
+
+    .articles article {
+        width: 100%;
+    }
+
+    .employees article {
+        width: 100%;
+    }
+
+    .newsletter-container {
+        max-width: 90%;
+    }
+
+    #newsletter form input[type="submit"] {
+        font-size: 15px;
     }
 }
