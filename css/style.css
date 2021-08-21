@@ -367,8 +367,9 @@ footer nav ul li i:hover {
 
 .blog-main {
     width: 85%;
-    margin: 40px 0 40px 40px;
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
 }
@@ -432,7 +433,8 @@ footer nav ul li i:hover {
 }
 
 aside {
-    width: 15%;
+    width: 200px;
+    min-width: 150px;
     background: #EEEDFF;
     padding-top: 40px;
     padding-left: 20px;
@@ -530,6 +532,39 @@ aside ul li:hover a {
 /* MEDIA QUERIES */
 
 @media (max-width: 1000px){
+
+    /* INDEX PAGE */
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-preview-text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-preview-text h2 {
+        text-align: center;
+    }
+
+    .article-preview-text p {
+        text-align: justify;
+        margin-top: 30px;
+    }
+
+    .article-preview-text button {
+        margin-top: 30px;
+    }
+
+    .hero img {
+        position:initial;
+        width: 80%;
+    }
+
     .articles {
         flex-direction: column;
         align-items: center;
@@ -568,5 +603,36 @@ aside ul li:hover a {
         max-width: 300px;
     }
 
+    /* BLOG PAGE */
 
+    .our-blog-section article {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .our-blog-section article img{
+        width: 60%;
+        height: 200px;
+    }
+
+    .blog-article-preview-content h4 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .blog-article-preview-content p {
+        text-align: justify;
+        margin-top: 20px;
+        line-height: 25px;
+    }
+
+    /* ARTICLE PAGE */
+
+    .article-main h2::before {
+        display: none;
+    }
+
+    .article-main h2::after {
+        display: none;
+    }
 }
