@@ -18,68 +18,70 @@
           </ul>
         </nav>
       </header>
+
       <div class="content-container">
         <main class="blog-main">
-            <h2>Our Blog</h2>
-            <section class="our-blog-section">
-                <h3>Articles that might interest you</h3>
-                <article>
-                    <img src="./assets/images/Accessibility.png" alt="Drawing of two people with a browser window as a backdrop; one of them uses a wheelchair." height="100" width="200">
-                    <div class="blog-article-preview-content">
-                        <h4><a href="article.html">The secret to easy and quick accessibility</a></h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quis voluptate cupiditate quibusdam porro illum eius doloribus suscipit ex laboriosam?</p>    
+            <h2 class="blog-main__header">Our Blog</h2>
+            <section class="our-blog">
+                <h3 class="our-blog__header">Articles that might interest you</h3>
+                <article class="our-blog__article">
+                    <img class="our-blog__article__image" src="./assets/images/Accessibility.png" alt="Drawing of two people with a browser window as a backdrop; one of them uses a wheelchair." height="100" width="200">
+                    <div class="our-blog__article__preview-content">
+                        <h4 class="our-blog__article__preview-content__header"><a href="article.html">The secret to easy and quick accessibility</a></h4>
+                        <p class="our-blog_article_preview-content_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quis voluptate cupiditate quibusdam porro illum eius doloribus suscipit ex laboriosam?</p>    
                     </div>
                 </article>
-                <article>
-                    <img src="./assets/images/img-4.jpg" alt="Frustrated-looking man staring at a laptop" height="100" width="200">
-                    <div class="blog-article-preview-content">
-                        <h4><a href="article.html">Why banging your head against your keyboard might count as a workout</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ipsum accusamus, fuga quasi repudiandae nulla nisi sint fugit! Rem, saepe?</p>    
+                <article class="our-blog__article">
+                    <img class="our-blog__article__image" src="./assets/images/img-4.jpg" alt="Frustrated-looking man staring at a laptop" height="100" width="200">
+                    <div class="our-blog__article__preview-content">
+                        <h4 class="our-blog__article__preview-content__header"><a href="article.html">Why banging your head against your keyboard might count as a workout</a></h4>
+                        <p class="our-blog_article_preview-content_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ipsum accusamus, fuga quasi repudiandae nulla nisi sint fugit! Rem, saepe?</p>    
                     </div>
                 </article>
-                <article>
-                    <img src="./assets/images/img-5.jpg" alt="Scared woman looking at her laptop in a darkened room" height="100" width="200">
-                    <div class="blog-article-preview-content">
-                        <h4><a href="article.html">Three coding challenges that will make you cry yourself to sleep tonight</a></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magni nobis velit nihil ullam ipsum quaerat at. Veritatis, porro delectus.</p>    
+                <article class="our-blog__article">
+                    <img class="our-blog__article__image" src="./assets/images/img-5.jpg" alt="Scared woman looking at her laptop in a darkened room" height="100" width="200">
+                    <div class="our-blog__article__preview-content">
+                        <h4 class="our-blog__article__preview-content__header"><a href="article.html">Three coding challenges that will make you cry yourself to sleep tonight</a></h4>
+                        <p class="our-blog_article_preview-content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magni nobis velit nihil ullam ipsum quaerat at. Veritatis, porro delectus.</p>    
                     </div>
                 </article>
             </section>
         </main>
-        <aside>
-            <h5>Categories</h5>
-            <ul role="tree">
-                <li role="treeitem"><a href="#">HTML</a></li>
-                <li role="treeitem"><a href="#">Javascript</a></li>
-                <li role="treeitem"><a href="#">React</a></li>
-                <li role="treeitem"><a href="#">SASS</a></li>
-                <li role="treeitem"><a href="#">CSS</a></li>
+
+        <aside class="categories">
+            <h5 class="categories__header">Categories</h5>
+            <ul class="categories__list" role="tree">
+                <li class="categories__list__item" role="treeitem"><a href="#">HTML</a></li>
+                <li class="categories__list__item" role="treeitem"><a href="#">Javascript</a></li>
+                <li class="categories__list__item" role="treeitem"><a href="#">React</a></li>
+                <li class="categories__list__item" role="treeitem"><a href="#">SASS</a></li>
+                <li class="categories__list__item" role="treeitem"><a href="#">CSS</a></li>
             </ul>
         </aside>    
     </div>
-    <footer>
-        <p>Copyright © 2021</p>
-        <nav>
-            <ul role="tree">
-                <li role="treeitem">
-                    <a aria-label="Go to our Twitter account" href="#">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li role="treeitem">
-                    <a aria-label="Go to our Facebook page" href="#">
-                    <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li role="treeitem">
-                    <a aria-label="Go to our Instagram account" href="#">
-                    <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
+    <footer class="footer">
+        <p class="footer__copyright">Copyright © 2021</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list" role="tree">
+            <li class="nav-item" role="treeitem">
+              <a class="nav-item__link" aria-label="Go to our Twitter account" href="#">
+                <i class="fab fa-twitter nav-item__link__icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" role="treeitem">
+              <a class="nav-item__link" aria-label="Go to our Facebook page" href="#">
+                <i class="fab fa-facebook nav-item__link__icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" role="treeitem">
+              <a class="nav-item__link" aria-label="Go to our Instagram account" href="#">
+                <i class="fab fa-instagram nav-item__link__icon"></i>
+              </a>
+            </li>
+          </ul>
         </nav>
-    </footer>
-      
+      </footer>
+        
       <script
       src="https://kit.fontawesome.com/cc4be81cad.js"
       crossorigin="anonymous"
