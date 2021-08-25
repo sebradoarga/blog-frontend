@@ -4,82 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <title>In-tech-nify</title>
   </head>
   <body>
-    <header>
-      <h1 aria-label="logo"><a href="index.html">In-tech-nify</a></h1>
-      <nav>
-        <ul role="tree">
-          <li role="treeitem"><a href="blog.html">Blog</a></li>
-          <li role="treeitem"><a href="#our-team">Our Team</a></li>
-          <li role="treeitem"><a href="#newsletter">Newsletter</a></li>
+    <header class="header">
+      <h1 aria-label="logo" class="header__logo"><a href="index.html">In-tech-nify</a></h1>
+      <nav class="header__nav">
+        <ul role="tree" class="header__nav__list">
+          <li class="header__nav__list__item" role="treeitem"><a href="blog.html">Blog</a></li>
+          <li class="header__nav__list__item" role="treeitem"><a href="index.html#our-team">Our Team</a></li>
+          <li class="header__nav__list__item" role="treeitem"><a href="index.html#newsletter">Newsletter</a></li>
         </ul>
       </nav>
     </header>
     <main>
+
+<!-- HERO -->
+
       <section class="hero" aria-label="featured article">
-        <div class="article-preview-text">
-          <h2 id="cool-coding-article">Emerging studies suggest coding is cool</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestiae impedit? Molestiae nemo a beatae adipisci error architecto commodi reprehenderit culpa laudantium rerum enim, veniam possimus fugiat dolorem obcaecati, odio ad doloremque quo vitae minima. Cupiditate magnam minima dolorum nam.</p>
-          <button id="cool-coding-article-btn" aria-labelledby="cool-coding-article cool-coding-article-btn">Read article</button>  
+        <div class="hero__article">
+          <h2 class="hero__article__header" id="cool-coding-article">Emerging studies suggest coding is cool</h2>
+          <p class="hero__article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestiae impedit? Molestiae nemo a beatae adipisci error architecto commodi reprehenderit culpa laudantium rerum enim, veniam possimus fugiat dolorem obcaecati, odio ad doloremque quo vitae minima. Cupiditate magnam minima dolorum nam.</p>
+          <button class="hero__article__btn" id="cool-coding-article-btn" aria-labelledby="cool-coding-article cool-coding-article-btn">Read article</button>  
         </div>
-        <img src="./assets/images/header.svg" alt="Drawing of a person lying on their back with a laptop in their lap" width="400" height="400">
+        <img class="hero__image" src="./assets/images/header.svg" alt="Drawing of a person lying on their back with a laptop in their lap" width="400" height="400">
       </section>
-      <section class="read-more-section">
-        <h2>Read more</h2>
-        <div class="articles">        <article>
-          <img src="./assets/images/Accessibility.png" alt="Drawing of two people with a browser window as a backdrop; one of them uses a wheelchair." height="200" width="300">
-          <h3 id="accessibility-article">The secret to easy and quick accessibility</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
-          <button id="accessibility-article-btn" aria-labelledby="accessibility-article accessibility-article-btn">Read article</button>
+
+<!-- READ MORE -->
+
+      <section class="read-more">
+        <h2 class="read-more__header">Read more</h2>
+        <div class="read-more__articles-container">
+        <article class="read-more__articles-container__article">
+          <img class="read-more__articles-container__article__image" src="./assets/images/Accessibility.png" alt="Drawing of two people with a browser window as a backdrop; one of them uses a wheelchair." height="200" width="300">
+          <h3 class="read-more__articles-container__article__header" id="accessibility-article">The secret to easy and quick accessibility</h3>
+          <p class="read-more__articles-container__article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
+          <button class="read-more__articles-container__article__btn" id="accessibility-article-btn" aria-labelledby="accessibility-article accessibility-article-btn">Read article</button>
         </article>
-        <article>
-          <img src="./assets/images/img-4.jpg" alt="Frustrated-looking man staring at a laptop" height="200" width="300">
-          <h3 id="banging-head">Why banging your head against your keyboard might count as a workout</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
-          <button id="banging-head-btn" aria-labelledby="banging-head banging-head-btn">Read article</button>
+
+        <article class="read-more__articles-container__article">
+          <img class="read-more__articles-container__article__image" src="./assets/images/img-4.jpg" alt="Frustrated-looking man staring at a laptop" height="200" width="300">
+          <h3 class="read-more__articles-container__article__header" id="banging-head">Why banging your head against your keyboard might count as a workout</h3>
+          <p class="read-more__articles-container__article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
+          <button class="read-more__articles-container__article__btn" id="banging-head-btn" aria-labelledby="banging-head banging-head-btn">Read article</button>
         </article>
-        <article>
-          <img src="./assets/images/img-5.jpg" alt="Scared woman looking at her laptop in a darkened room" height="200" width="300">
-          <h3 id="coding-challenges">3 coding challenges that will make you cry yourself to sleep tonight</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
-          <button id="coding-challenges-btn" aria-labelledby="coding-challenges coding-challenges-btn">Read article</button>
-        </article>
-        </div>
-      </section>
-      <section id="our-team">
-        <h2>Meet our team</h2>
-        <div class="employees">        
-          <article>
-          <img src="./assets/images/employee-2.jpg" alt="Picture of Debra Watts" height="200" width="200">
-          <h3 id="debra">Debra Watts</h3>
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
-          <button id="debra-btn" aria-labelledby="debra debra-btn">Find out more</button>
-        </article>
-        <article>
-          <img src="./assets/images/employee-1.jpg" alt="Picture of Kristina Emilia" height="200" width="200">
-          <h3 id="kristina">Kristina Emilia</h3>
-          <h4>Head of Business Department</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
-          <button id="kristina-btn" aria-labelledby="kristina kristina-btn">Find out more</button>
-        </article>
-        <article>
-          <img src="./assets/images/employee-img2.png" alt="Picture of Raul Vaughn" height="200" width="200">
-          <h3 id="raul">Raul Vaughn</h3>
-          <h4>Social Media Manager</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
-          <button id="raul-btn" aria-labelledby="raul raul-btn">Find out more</button>
+
+        <article class="read-more__articles-container__article">
+          <img class="read-more__articles-container__article__image" src="./assets/images/img-5.jpg" alt="Scared woman looking at her laptop in a darkened room" height="200" width="300">
+          <h3 class="read-more__articles-container__article__header" id="coding-challenges">3 coding challenges that will make you cry yourself to sleep tonight</h3>
+          <p class="read-more__articles-container__article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ad et, ratione pariatur deserunt in laudantium autem facere eligendi quo.</p>
+          <button class="read-more__articles-container__article__btn" id="coding-challenges-btn" aria-labelledby="coding-challenges coding-challenges-btn">Read article</button>
         </article>
         </div>
       </section>
-      <section id="newsletter">
-        <div class="newsletter-container">
-          <h2>Never miss another article</h2>
-          <h3>Subscribe to our Newsletter</h3>
-          <form>
+
+<!-- OUR TEAM -->
+
+      <section class="our-team" id="our-team">
+        <h2 class="our-team__header">Meet our team</h2>
+        <div class="employees-container">        
+          <article class="employees-container__employee">
+          <img class="employees-container__employee__image" src="./assets/images/employee-2.jpg" alt="Picture of Debra Watts" height="200" width="200">
+          <h3 class="employees-container__employee__name" id="debra">Debra Watts</h3>
+          <h4 class="employees-container__employee__position">Web Developer</h4>
+          <p class="employees-container__employee__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
+          <button class="employees-container__employee__btn" id="debra-btn" aria-labelledby="debra debra-btn">Find out more</button>
+        </article>
+        <article class="employees-container__employee">
+          <img class="employees-container__employee__image" src="./assets/images/employee-1.jpg" alt="Picture of Kristina Emilia" height="200" width="200">
+          <h3 class="employees-container__employee__name" id="kristina">Kristina Emilia</h3>
+          <h4 class="employees-container__employee__position">Head of Business Department</h4>
+          <p class="employees-container__employee__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
+          <button class="employees-container__employee__btn" id="kristina-btn" aria-labelledby="kristina kristina-btn">Find out more</button>
+        </article>
+        <article class="employees-container__employee">
+          <img class="employees-container__employee__image" src="./assets/images/employee-img2.png" alt="Picture of Raul Vaughn" height="200" width="200">
+          <h3 class="employees-container__employee__name" id="raul">Raul Vaughn</h3>
+          <h4 class="employees-container__employee__position">Social Media Manager</h4>
+          <p class="employees-container__employee__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, ipsum nisi. Adipisci eligendi dolore voluptatum aliquid accusamus neque quos beatae.</p>
+          <button class="employees-container__employee__btn" id="raul-btn" aria-labelledby="raul raul-btn">Find out more</button>
+        </article>
+        </div>
+      </section>
+
+<!-- NEWSLETTER -->
+
+      <section class="newsletter" id="newsletter">
+        <div class="newsletter__container">
+          <h2 class="newsletter__container__header">Never miss another article</h2>
+          <h3 class="newsletter__container__cta">Subscribe to our Newsletter</h3>
+          <form class="newsletter__container__form">
             <label for="user-name">Your Name</label>
             <input type="text" id="user-name">
             <label for="email-address">Your Email Address</label>
@@ -100,23 +115,24 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>Copyright © 2021</p>
-      <nav>
-        <ul role="tree">
-          <li role="treeitem">
-            <a aria-label="Go to our Twitter account" href="#">
-              <i class="fab fa-twitter"></i>
+
+    <footer class="footer">
+      <p class="footer__copyright">Copyright © 2021</p>
+      <nav class="footer__nav">
+        <ul class="footer__nav__list" role="tree">
+          <li class="nav-item" role="treeitem">
+            <a class="nav-item__link" aria-label="Go to our Twitter account" href="#">
+              <i class="fab fa-twitter nav-item__link__icon"></i>
             </a>
           </li>
-          <li role="treeitem">
-            <a aria-label="Go to our Facebook page" href="#">
-              <i class="fab fa-facebook"></i>
+          <li class="nav-item" role="treeitem">
+            <a class="nav-item__link" aria-label="Go to our Facebook page" href="#">
+              <i class="fab fa-facebook nav-item__link__icon"></i>
             </a>
           </li>
-          <li role="treeitem">
-            <a aria-label="Go to our Instagram account" href="#">
-              <i class="fab fa-instagram"></i>
+          <li class="nav-item" role="treeitem">
+            <a class="nav-item__link" aria-label="Go to our Instagram account" href="#">
+              <i class="fab fa-instagram nav-item__link__icon"></i>
             </a>
           </li>
         </ul>

@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #222;
+
+    *{
+        color: white;
+    }
+
+    &__nav {
+        &__list {
+            display: flex;
+            width: 100px;
+            align-items: center;
+            justify-content: space-between;
+            
+            .nav-item {
+                &__link {
+
+                    &__icon {
+                        transform: scale(1.3);
+
+                        &:hover {
+                            color: #CC74AB;
+                            transition: 0.3s ease;                       
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

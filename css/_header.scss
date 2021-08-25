@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(-45deg, #575A89, #CC74AB);
+
+    *{
+        color: white;
+    }
+    
+    &__logo {
+        font-family: "Teko", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 2px;    
+    }
+
+    &__nav {
+        width: 300px;
+
+        &__list {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+            &__item {
+                font-size: 30px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s ease;                
+                }
+            }
+        
+        }
+    }
+}
