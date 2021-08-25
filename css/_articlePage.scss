@@ -1,24 +1,26 @@
+@import "utilities";
+
 .article-main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 4em;
 
     &__header {
-        font-size: 50px;
+        font-size: 5rem;
         text-transform: capitalize;
         width: 50%;
         text-align: center;
 
         &::before {
             content: "";
-            width: 200px;
-            height: 200px;
+            width: 20rem;
+            height: 20rem;
             display: block;
             position: absolute;
-            right: 200px;
-            bottom: -400px;
+            right: 20rem;
+            bottom: -40rem;
             background: linear-gradient(90deg, #575a8977, #cc74aa7a);
             border-radius: 100%;
             z-index: -1;        
@@ -26,12 +28,12 @@
         
         &::after {
             content: "";
-            width: 100px;
-            height: 100px;
+            width: 10rem;
+            height: 10rem;
             display: block;
             position: absolute;
             left:10%;
-            top: 220px;
+            top: 22rem;
             background: linear-gradient(-90deg, #575a8975, #cc74aa77);
             border-radius: 100%;
             z-index: -1;        
@@ -39,16 +41,17 @@
     }
 
     &__image {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
         position: relative;    
     }
 
     p {
         width: 60%;
-        margin-top: 10px;
+        margin-top: 1rem;
         text-align: justify;
-        line-height: 25px;
-        text-indent: 50px;    
+        line-height: 2.5rem;
+        text-indent: 5rem;
+        font-size: $normalText;    
     }
 }

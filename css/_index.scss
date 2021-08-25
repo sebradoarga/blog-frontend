@@ -1,59 +1,62 @@
+@import "utilities";
+
 .hero {
     width: 100%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 
     &__article {
-        padding: 40px 20px;
+        padding: 8em 2em 3em 2em;
         width: 40%;
 
         &__header {
-            font-size: 50px;
+            font-size: 6rem;
             text-transform: capitalize;        
         }
 
         &__text {
-            margin-top: 20px;
-            line-height: 25px;        
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            line-height: 3rem;        
         }
 
         &__btn {
-            margin-top: 20px;
-            font-size: 25px;        
+            margin-top: 1.7rem;
+            font-size: 2.3rem;        
         }
     }
 
     &__image {
         width: 40%;
         position: relative;
-        top: 100px;    
+        top: 9rem;    
     }    
 }
 
 .read-more{
-    margin-top: 70px;
-    padding: 60px 40px;
-    background: linear-gradient(-135deg, #575A89, #CC74AB);
+    margin-top: 8rem;
+    padding: 6em 0;
+    background: linear-gradient(-135deg, $purple, $pink);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__header {
         text-transform: uppercase;
-        font-size: 60px;
+        font-size: $sectionTitleSize;
         text-align: center;
         color: white;    
     }
 
     &__articles-container {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-top: 60px;
-        max-width: 1200px;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 4rem;
+        max-width: 150rem;
     
         &__article {
             background: white;
@@ -61,11 +64,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 30px 20px;
-            min-height: 500px;
+            padding: 3em 2em;
+            min-height: 50rem;
             border-radius: 20px;
-            box-shadow: 0 0 20px 5px #575A89;
-            height: 530px;
+            box-shadow: 0 0 1rem 0.5rem #575A89;
+            margin: 1.5rem;
             
             &__image {
                 width: 85%;
@@ -73,22 +76,29 @@
             }
 
             &__header {
-                margin-top: 30px;
-                font-size: 25px;
+                margin-top: 2rem;
+                font-size: $smallHeader;
                 text-transform: capitalize;
                 text-align: center;
-                letter-spacing: 1.5px;            
+                letter-spacing: 0.2rem;
+                min-height: 12rem;
+                display: flex;
+                align-items: center;
             }
 
             &__text {
                 margin-top: 20px;
                 overflow: hidden;
-                text-align: justify;            
+                text-align: justify;
+                font-size: $normalText;       
+                padding-left: 1em;
+                padding-right: 1em;
+                line-height: 2rem;
             }
 
             &__btn {
-                margin-top: 30px;
-                font-size: 20px;            
+                margin-top: 3rem;
+                font-size: 2rem;            
             }
         }
     }
@@ -96,66 +106,67 @@
 
 .our-team {
     width: 100%;
-    padding: 60px 40px;
+    padding: 6em 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__header {
         text-transform: uppercase;
-        font-size: 60px;
+        font-size: $sectionTitleSize;
         text-align: center;    
     }
 
     .employees-container {
         display: flex;
-        margin-top: 60px;
-        max-width: 1200px;
+        margin-top: 8rem;
+        max-width: 120rem;
         justify-content: space-between;
     
         &__employee{
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 30%;
+            width: 32%;
             border: 3px solid #575A89;
-            padding: 0 20px 30px 20px;
+            padding: 0 2em 3em 2em;
             border-radius: 20px;
         
             &__image {
-                width: 200px;
-                height: 200px;
+                width: 20rem;
+                height: 20rem;
                 object-fit: cover;
                 object-position: center;
                 border-radius: 100%;
                 position: relative;
-                bottom: 50px;
+                bottom: 5rem;
                 border: 5px solid rgb(175, 175, 175);
             }
 
             &__name {
-                font-size: 40px;
-                margin-top: -30px;
+                font-size: $smallHeader;
+                margin-top: -3rem;
                 text-align: center;
-                letter-spacing: 2px;
+                letter-spacing: 0.2rem;
             }
 
             &__position {
-                font-size: 25px;
+                font-size: 2.5rem;
                 text-align: center;
-                letter-spacing: 1.5px;
+                letter-spacing: 0.15rem;
             }
 
             &__description {
-                margin-top: 20px;
+                margin-top: 2rem;
                 width: 70%;
                 text-align: center;
-                line-height: 25px;
+                line-height: 2.5rem;
+                font-size: $normalText;
             }
 
             &__btn {
-                margin-top: 30px;
-                font-size: 20px;
+                margin-top: 3rem;
+                font-size: 2rem;
             }
         }
     }
@@ -167,8 +178,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background: linear-gradient(-135deg, #575A89, #CC74AB);
 
     &__container {
@@ -176,19 +187,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px;
+        padding: 4em;
         border-radius: 20px;
         
         &__header {
-            font-size: 50px;
+            font-size: 5rem;
             text-transform: uppercase;
             text-align: center;        
         }
 
         &__cta {
-            font-size: 30px;
+            font-size: 3rem;
             text-transform: capitalize;
-            margin-top: 10px;
+            margin-top: 1rem;
             text-align: center;        
         }
 
@@ -196,48 +207,47 @@
             width: 90%;
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
             
             label {
                 text-transform: capitalize;
-                margin-top: 20px;
-                font-size: 16px;
-                margin-bottom: 5px;
-                line-height: 23px;            
+                margin-top: 2rem;
+                font-size: $normalText;
+                margin-bottom: 0.5rem;
+                line-height: 2.3rem;            
             }
 
             input {
-                font-size: 16px;
-                padding-left: 10px;
+                font-size: $normalText;
+                padding-left: 1em;
                 
                 &[type="text"],
                 &[type="email"] {
-                    height: 30px;
+                    height: 3rem;
                 }
 
                 &[type="checkbox"] {
                     transform: scale(1.2);
-                    margin-right: 8px;                
+                    margin-right: 0.8rem;                
                 }
 
                 &[type="submit"] { 
-                    margin-top: 30px;
-                    font-size: 18px;
+                    margin-top: 3rem;
+                    font-size: 1.8rem;
                     width: 80%;
                     align-self: center;
-                    padding-top: 15px;
-                    padding-bottom: 15px;                
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;                
                 }
             }
 
             select {
-                height: 30px;
-                font-size: 16px;
-                padding-left: 5px;            
+                height: 3rem;
+                font-size: $normalText;
+                padding-left: 0.5em;            
             }
 
             .checkbox {
-                margin-top: 20px;
+                margin-top: 3rem;
             }
         }
     }

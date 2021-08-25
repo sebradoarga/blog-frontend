@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap');
 
+$sectionTitleSize : 7rem;
+$smallHeader : 3rem;
+$normalText : 1.6rem;
+$purple: #575A89;
+$pink: #CC74AB;
+
 $main-font: "Alumni Sans";
 
 *{
@@ -7,6 +13,10 @@ $main-font: "Alumni Sans";
     padding:0;
     margin:0;
     font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -28,8 +38,8 @@ a {
 
 button, input[type="submit"] {
     font-weight: bold;
-    letter-spacing: 2px;
-    padding: 10px;
+    letter-spacing: 0.2rem;
+    padding: 0.7em;
     border-radius: 5px;
     background: #575A89;
     border: none;

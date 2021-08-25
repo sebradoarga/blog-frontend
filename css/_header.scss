@@ -1,9 +1,11 @@
+@import "utilities";
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    background: linear-gradient(-45deg, #575A89, #CC74AB);
+    padding: 2em 4em;
+    background: linear-gradient(-45deg, $purple, $pink);
 
     *{
         color: white;
@@ -12,12 +14,12 @@
     &__logo {
         font-family: "Teko", sans-serif;
         font-weight: 600;
-        font-size: 40px;
-        letter-spacing: 2px;    
+        font-size: 4rem;
+        letter-spacing: 0.2rem;    
     }
 
     &__nav {
-        width: 300px;
+        width: 30rem;
 
         &__list {
             display: flex;
@@ -26,7 +28,7 @@
             justify-content: space-between;
 
             &__item {
-                font-size: 30px;
+                font-size: 3rem;
 
                 &:hover {
                     transform: scale(1.1);
