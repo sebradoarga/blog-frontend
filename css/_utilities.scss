@@ -55,10 +55,10 @@ button, input[type="submit"] {
     border: none;
     color: white;
     text-transform: capitalize;
+    transition: transform 0.2s ease;
 
     &:hover {
         cursor: pointer;
         transform: scale(0.98);
-        transition: 0.2s ease;
     }
 }

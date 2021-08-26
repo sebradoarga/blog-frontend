@@ -50,11 +50,11 @@ button, input[type=submit] {
   border: none;
   color: white;
   text-transform: capitalize;
+  transition: transform 0.2s ease;
 }
 button:hover, input[type=submit]:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.2s ease;
 }
 
 * {
@@ -104,11 +104,11 @@ button, input[type=submit] {
   border: none;
   color: white;
   text-transform: capitalize;
+  transition: transform 0.2s ease;
 }
 button:hover, input[type=submit]:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.2s ease;
 }
 
 .header {
@@ -143,10 +143,10 @@ button:hover, input[type=submit]:hover {
 }
 .header__nav__list__item {
   font-size: 3rem;
+  transition: transform 0.3s ease;
 }
 .header__nav__list__item:hover {
   transform: scale(1.1);
-  transition: 0.3s ease;
 }
 
 * {
@@ -196,11 +196,11 @@ button, input[type=submit] {
   border: none;
   color: white;
   text-transform: capitalize;
+  transition: transform 0.2s ease;
 }
 button:hover, input[type=submit]:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.2s ease;
 }
 
 .hero {
@@ -693,11 +693,11 @@ button, input[type=submit] {
   border: none;
   color: white;
   text-transform: capitalize;
+  transition: transform 0.2s ease;
 }
 button:hover, input[type=submit]:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.2s ease;
 }
 
 .content-container {
@@ -929,11 +929,11 @@ button, input[type=submit] {
   border: none;
   color: white;
   text-transform: capitalize;
+  transition: transform 0.2s ease;
 }
 button:hover, input[type=submit]:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.2s ease;
 }
 
 .article-main {
@@ -1034,8 +1034,8 @@ button:hover, input[type=submit]:hover {
 }
 .footer__nav__list .nav-item__link__icon {
   font-size: 1.7rem;
+  transition: color 0.3s ease;
 }
 .footer__nav__list .nav-item__link__icon:hover {
   color: #CC74AB;
-  transition: 0.3s ease;
 }/*# sourceMappingURL=style2.css.map */

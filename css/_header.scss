@@ -34,9 +34,10 @@
             &__item {
                 font-size: 3rem;
 
+                transition: transform 0.3s ease;                
+
                 &:hover {
                     transform: scale(1.1);
-                    transition: 0.3s ease;                
                 }
             }
         

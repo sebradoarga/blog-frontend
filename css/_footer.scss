@@ -25,10 +25,10 @@
 
                     &__icon {
                        font-size: 1.7rem;
+                       transition: color 0.3s ease;                       
 
                         &:hover {
                             color: #CC74AB;
-                            transition: 0.3s ease;                       
                         }
                     }
                 }
