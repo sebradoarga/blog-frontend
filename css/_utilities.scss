@@ -20,10 +20,6 @@ $main-font: "Alumni Sans";
 html {
     font-size: 62.5%;
 
-    @include responsive(tab-land) {
-        font-size: 62.5%;
-    }
-
     @include responsive(tab-port) {
         font-size: 56.25%;
     }
