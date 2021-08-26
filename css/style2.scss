@@ -8,112 +8,83 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1000px){
+// @media (max-width: 1000px){
 
     /* INDEX PAGE */
 
-    .hero {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .article-preview-text {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    // .articles {
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
-    .article-preview-text h2 {
-        text-align: center;
-    }
+    // .articles article{
+    //     width: 80%;
+    //     min-width: 200px;
+    //     max-width: 500px;
+    //     height: auto;
+    //     margin-top: 30px;
+    // }
 
-    .article-preview-text p {
-        text-align: justify;
-        margin-top: 30px;
-    }
+    // .articles article img {
+    //     max-width: 300px;
+    // }
 
-    .article-preview-text button {
-        margin-top: 30px;
-    }
+    // .articles article p {
+    //     max-width: 300px;
+    // }
 
-    .hero img {
-        position:initial;
-        width: 80%;
-    }
+    // .employees {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     width: 100%;
+    // }
 
-    .articles {
-        flex-direction: column;
-        align-items: center;
-    }
+    // .employees article{
+    //     width: 80%;
+    //     min-width: 200px;
+    //     max-width: 500px;
+    //     height: auto;
+    //     margin-top: 60px;
+    // }
 
-    .articles article{
-        width: 80%;
-        min-width: 200px;
-        max-width: 500px;
-        height: auto;
-        margin-top: 30px;
-    }
-
-    .articles article img {
-        max-width: 300px;
-    }
-
-    .articles article p {
-        max-width: 300px;
-    }
-
-    .employees {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .employees article{
-        width: 80%;
-        min-width: 200px;
-        max-width: 500px;
-        height: auto;
-        margin-top: 60px;
-    }
-
-    .employees article p {
-        max-width: 300px;
-    }
+    // .employees article p {
+    //     max-width: 300px;
+    // }
 
     /* BLOG PAGE */
 
-    .our-blog-section article {
-        flex-direction: column;
-        width: 80%;
-    }
+    // .our-blog-section article {
+    //     flex-direction: column;
+    //     width: 80%;
+    // }
 
-    .our-blog-section article img{
-        width: 60%;
-        height: 200px;
-    }
+    // .our-blog-section article img{
+    //     width: 60%;
+    //     height: 200px;
+    // }
 
-    .blog-article-preview-content h4 {
-        text-align: center;
-        margin-top: 20px;
-    }
+    // .blog-article-preview-content h4 {
+    //     text-align: center;
+    //     margin-top: 20px;
+    // }
 
-    .blog-article-preview-content p {
-        text-align: justify;
-        margin-top: 20px;
-        line-height: 25px;
-    }
+    // .blog-article-preview-content p {
+    //     text-align: justify;
+    //     margin-top: 20px;
+    //     line-height: 25px;
+    // }
 
     /* ARTICLE PAGE */
 
-    .article-main h2::before {
-        display: none;
-    }
+//     .article-main h2::before {
+//         display: none;
+//     }
 
-    .article-main h2::after {
-        display: none;
-    }
-}
+//     .article-main h2::after {
+//         display: none;
+//     }
+// }
 
 @media (max-width: 600px){
     header {

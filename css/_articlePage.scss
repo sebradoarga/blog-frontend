@@ -23,7 +23,11 @@
             bottom: -40rem;
             background: linear-gradient(90deg, #575a8977, #cc74aa7a);
             border-radius: 100%;
-            z-index: -1;        
+            z-index: -1;
+            
+            @include responsive(tab-port) {
+                display: none;
+            }
         }
         
         &::after {
@@ -37,6 +41,10 @@
             background: linear-gradient(-90deg, #575a8975, #cc74aa77);
             border-radius: 100%;
             z-index: -1;        
+
+            @include responsive(tab-port) {
+                display: none;
+            }
         }
     }
 
