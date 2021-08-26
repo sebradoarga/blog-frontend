@@ -13,6 +13,10 @@
         width: 50%;
         text-align: center;
 
+        @include responsive(phone) {
+            width: 80%;
+        }
+
         &::before {
             content: "";
             width: 20rem;
@@ -51,7 +55,12 @@
     &__image {
         margin-top: 4rem;
         margin-bottom: 3rem;
-        position: relative;    
+        position: relative;
+        
+        @include responsive(phone){
+            width: 100%;
+            height: auto;
+        }
     }
 
     p {
@@ -60,6 +69,10 @@
         text-align: justify;
         line-height: 2.5rem;
         text-indent: 5rem;
-        font-size: $normalText;    
+        font-size: $normalText; 
+        
+        @include responsive(phone) {
+            width: 90%;
+        }
     }
 }
