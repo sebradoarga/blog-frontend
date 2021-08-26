@@ -1,10 +1,135 @@
 @import "utilities";
 @import "mediaQueries";
 
+$animationDuration: 9s;
+
+.roger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    width: 100%;
+
+    &__svg {
+        width: 20rem;
+        height: 20rem;
+        display: block;
+        margin-left: 2rem;
+
+        #background {
+            fill: $purple;
+        }
+    
+        #head {
+            animation: head-movement $animationDuration linear infinite;
+            transform-origin: bottom;
+            transform-box: fill-box;
+        }
+    
+        #hair {
+            animation: hair-tilt $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #left-eye {
+            animation: left-eye-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #left-pupil {
+            animation: left-pupil-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+    
+        }
+    
+        #right-eye {
+            animation: right-eye-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #right-pupil {
+            animation: right-pupil-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #left-ear {
+            animation: left-ear-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+        #right-ear {
+            animation: right-ear-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #muzzle {
+            animation: muzzle-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #nose {
+            animation: nose-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+    
+        #tongue {
+            animation: tongue-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #right-paw {
+            animation: right-paw-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #right-paw-shadow {
+            animation: right-paw-shadow-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        #right-nail-1, #right-nail-2 {
+            animation: right-nails-movement $animationDuration linear infinite;
+            transform-origin: center;
+            transform-box: fill-box; 
+        }    
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2em;
+
+        &__header {
+            font-size: 3rem;
+            color: $purple;
+        }
+
+        &__paragraph {
+            font-size: 2rem;
+            margin-top: 0.5em;
+        }
+    }
+}
+
 .hero {
     width: 100%;
     max-width: 120rem;
     margin: auto;
+    margin-top: 2rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -15,7 +140,7 @@
     }
 
     &__article {
-        padding: 8em 2em 3em 2em;
+        padding: 0 2em 3em 2em;
         width: 40%;
 
         @include responsive(tab-port){
@@ -455,3 +580,302 @@
     }
 }
 
+//ANIMATIONS
+
+$firstTilt: -15deg;
+
+
+@mixin rotateAndMove($rotationDegrees, $xDistance, $yDistance) {
+    transform: rotate($rotationDegrees) translate($xDistance, $yDistance);
+}
+
+@keyframes head-movement {
+    6% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    14% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes hair-tilt {
+    6% {
+        @include rotateAndMove(-30deg, -12rem, -3rem);
+    }
+
+    14% {
+        @include rotateAndMove(-30deg, -12rem, -3rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes left-ear-movement {
+    6% {
+        @include rotateAndMove(-20deg, -6rem, 10rem);
+    }
+
+    14% {
+        @include rotateAndMove(-20deg, -6rem, 10rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes right-ear-movement {
+    6% {
+        @include rotateAndMove(-22deg, -4rem, -6rem);
+    }
+
+    14% {
+        @include rotateAndMove(-22deg, -4rem, -6rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes left-eye-movement {
+    6% {
+        @include rotateAndMove(0, -2rem, 2.3rem)
+    }
+
+    14% {
+        @include rotateAndMove(0, -2rem, 2.3rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes left-pupil-movement {
+    6% {
+        @include rotateAndMove(0, -2rem, 2.3rem)
+    }
+
+    14% {
+        @include rotateAndMove(0, -2rem, 2.3rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+
+    21% {
+        @include rotateAndMove(0, -0.7rem, 0);
+    }
+
+    30% {
+        @include rotateAndMove(0, -0.7rem, 0);
+    }
+
+    31% {
+        @include rotateAndMove(0, 0, 0);
+    }
+
+    70% {
+        @include rotateAndMove(0, 0, 0); 
+    }
+
+    71% {
+        @include rotateAndMove(0, -0.6rem, 0.5rem);
+    }
+
+    80% {
+        @include rotateAndMove(0, -0.6rem, 0.5rem);
+    }
+
+    81% {
+        @include rotateAndMove(0, 0, 0); 
+    }
+
+}
+
+// WINK
+
+@keyframes right-eye-movement {
+    6% {
+        @include rotateAndMove(0, -2rem, -1.5rem)
+    }
+
+    14% {
+        @include rotateAndMove(0, -2rem, -1.5rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+
+    50% {
+        @include rotateAndMove(0, 0, 0);   
+    }
+
+    52% {
+        @include rotateAndMove(0, 0rem, 1rem);
+    }
+
+    54% {
+        @include rotateAndMove(0, 0, 0);   
+    }
+}
+
+@keyframes right-pupil-movement {
+    6% {
+        @include rotateAndMove(0, -2rem, -1.5rem)
+    }
+
+    14% {
+        @include rotateAndMove(0, -2rem, -1.5rem);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+
+    21% {
+        @include rotateAndMove(0, -0.7rem, 0);
+    }
+
+    30% {
+        @include rotateAndMove(0, -0.7rem, 0);
+    }
+
+    31% {
+        @include rotateAndMove(0, 0, 0);
+    }
+
+    50% {
+        opacity: 1;
+        @include rotateAndMove(0, 0, 0);   
+    }
+
+    51% {
+        opacity: 0;
+    }
+
+    52% {
+        @include rotateAndMove(0, 0rem, 1rem);
+    }
+
+    54% {
+        opacity: 1;
+        @include rotateAndMove(0, 0, 0);   
+    }
+
+    70% {
+        @include rotateAndMove(0, 0, 0); 
+    }
+
+    71% {
+        @include rotateAndMove(0, -0.6rem, 0.5rem);
+    }
+
+    80% {
+        @include rotateAndMove(0, -0.6rem, 0.5rem);
+    }
+
+    81% {
+        @include rotateAndMove(0, 0, 0); 
+    }
+}
+
+// END WINK
+
+
+@keyframes muzzle-movement {
+    6% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    14% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+
+@keyframes nose-movement {
+    6% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    14% {
+        @include rotateAndMove($firstTilt, 0, 0);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    } 
+}
+
+@keyframes tongue-movement {
+    6% {
+       @include rotateAndMove($firstTilt, 1rem, 0);
+    }
+
+    14% {
+        @include rotateAndMove($firstTilt, 1rem, 0);
+    }
+
+    20% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+// PAW MOVEMENT
+
+@keyframes right-paw-movement {
+    15% {
+        @include rotateAndMove(0, 0, 0);
+    }
+    
+    18% {
+        transform: rotateX(50deg);
+    }
+
+    21% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes right-paw-shadow-movement {
+    15% {
+        @include rotateAndMove(0, 0, 0);
+    }
+    
+    18% {
+        transform: rotateX(60deg);
+    }
+
+    21% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
+
+@keyframes right-nails-movement {
+    15% {
+        @include rotateAndMove(0, 0, 0);
+    }
+    
+    18% {
+        transform: translateY(-3.6rem);
+    }
+
+    21% {
+        @include rotateAndMove(0, 0, 0);
+    }
+}
