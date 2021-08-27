@@ -1,10 +1,11 @@
-@import "utilities";
+@use "utilities" as u;
+@use "mediaQueries" as mq;
 
 .content-container {
     display: flex;
     justify-content: space-between;
 
-    @include responsive(phone) {
+    @include mq.responsive(phone) {
         flex-direction: column-reverse;
     }
 
@@ -17,7 +18,7 @@
         align-items: center;
         min-height: 84vH;
 
-        @include responsive(phone) {
+        @include mq.responsive(phone) {
             width: 100%;
         }
 
@@ -25,7 +26,7 @@
             font-size: 6rem;
             text-transform: uppercase;
             letter-spacing: 0.2rem;
-            background: $purple;
+            background: u.$purple;
             padding: 0.2em 0.4em;
             color: white;
             border-radius: 10px;
@@ -52,12 +53,12 @@
                 display: flex;
                 align-items: center;
 
-                @include responsive(tab-port) {
+                @include mq.responsive(tab-port) {
                     flex-direction: column;
                     width: 80%;
                 }
 
-                @include responsive(phone) {
+                @include mq.responsive(phone) {
                     width: 100%;
                 }
                 
@@ -69,7 +70,7 @@
                     border-radius: 5px;
                     margin-top: 0.8rem;
 
-                    @include responsive(tab-port) {
+                    @include mq.responsive(tab-port) {
                         width: 60%;
                         height: 20rem;
                     }
@@ -84,22 +85,22 @@
                         letter-spacing: 0.15rem;
                         text-transform: capitalize;
 
-                        @include responsive(tab-port){
+                        @include mq.responsive(tab-port){
                             text-align: center;
                             margin-top: 2rem;
                         }
                         
                         a {
-                            color: $purple;
+                            color: u.$purple;
                         }
                     }
 
                     &__text {
                         margin-top: 0.5rem;
-                        font-size: $normalText;
+                        font-size: u.$normalText;
                         line-height: 2.2rem;
 
-                        @include responsive(tab-port){
+                        @include mq.responsive(tab-port){
                             text-align: justify;
                             margin-top: 20px;
                             line-height: 25px;
@@ -120,7 +121,7 @@
     padding-top: 40px;
     padding-left: 20px;
 
-    @include responsive(phone) {
+    @include mq.responsive(phone) {
         display: flex;
         align-items: center;
         width: 100%;
@@ -138,7 +139,7 @@
         background: #8B8CBF;
         color: white; 
         
-        @include responsive(phone) {
+        @include mq.responsive(phone) {
             color: black;
             background: none;
             font-size: 1.5rem;
@@ -151,7 +152,7 @@
         padding-left: 10px;
         margin-top: 20px;
 
-        @include responsive(phone) {
+        @include mq.responsive(phone) {
             display: flex;
             align-items: center;
             border: none;
@@ -169,7 +170,7 @@
                 color: white;
                 padding-left: 1rem;
 
-                @include responsive(phone) {
+                @include mq.responsive(phone) {
                     background: none;
                     padding-left: 0;
                     transform: scale(1.1);
@@ -178,7 +179,7 @@
                 a {
                     color: white;
 
-                    @include responsive(phone) {
+                    @include mq.responsive(phone) {
                         color: #222;
                     }
                 }

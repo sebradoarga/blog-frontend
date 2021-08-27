@@ -1,13 +1,14 @@
-@import "utilities";
+@use "utilities" as u;
+@use "mediaQueries" as mq;
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2em 4em;
-    background: linear-gradient(-45deg, $purple, $pink);
+    background: linear-gradient(-45deg, u.$purple, u.$pink);
 
-    @include responsive(phone) {
+    @include mq.responsive(phone) {
         flex-direction: column;
     }
 

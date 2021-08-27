@@ -1,6 +1,7 @@
+@use "mediaQueries";
+
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap');
 
-@import "mediaQueries";
 
 $sectionTitleSize : 7rem;
 $smallHeader : 3rem;
@@ -20,11 +21,11 @@ $main-font: "Alumni Sans";
 html {
     font-size: 62.5%;
 
-    @include responsive(tab-port) {
+    @include mediaQueries.responsive(tab-port) {
         font-size: 56.25%;
     }
 
-    @include responsive(phone) {
+    @include mediaQueries.responsive(phone) {
         font-size: 50%;
     }
 }

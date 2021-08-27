@@ -1,4 +1,5 @@
-@import "utilities";
+@use "utilities";
+@use "mediaQueries";
 
 .article-main {
     width: 100%;
@@ -13,7 +14,7 @@
         width: 50%;
         text-align: center;
 
-        @include responsive(phone) {
+        @include mediaQueries.responsive(phone) {
             width: 80%;
         }
 
@@ -29,7 +30,7 @@
             border-radius: 100%;
             z-index: -1;
             
-            @include responsive(tab-port) {
+            @include mediaQueries.responsive(tab-port) {
                 display: none;
             }
         }
@@ -46,7 +47,7 @@
             border-radius: 100%;
             z-index: -1;        
 
-            @include responsive(tab-port) {
+            @include mediaQueries.responsive(tab-port) {
                 display: none;
             }
         }
@@ -57,7 +58,7 @@
         margin-bottom: 3rem;
         position: relative;
         
-        @include responsive(phone){
+        @include mediaQueries.responsive(phone){
             width: 100%;
             height: auto;
         }
@@ -69,9 +70,9 @@
         text-align: justify;
         line-height: 2.5rem;
         text-indent: 5rem;
-        font-size: $normalText; 
+        font-size: utilities.$normalText; 
         
-        @include responsive(phone) {
+        @include mediaQueries.responsive(phone) {
             width: 90%;
         }
     }

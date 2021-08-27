@@ -1,3 +1,5 @@
+@use "utilities";
+
 .footer {
     display: flex;
     align-items: center;
@@ -28,7 +30,7 @@
                        transition: color 0.3s ease;                       
 
                         &:hover {
-                            color: #CC74AB;
+                            color: utilities.$pink;
                         }
                     }
                 }
