@@ -1,5 +1,5 @@
-@import "utilities";
-@import "mediaQueries";
+@use "utilities";
+@use "mediaQueries";
 
 $animationDuration: 9s;
 
@@ -18,7 +18,7 @@ $animationDuration: 9s;
         margin-left: 2rem;
 
         #background {
-            fill: $purple;
+            fill: utilities.$purple;
         }
     
         #head {
@@ -115,7 +115,7 @@ $animationDuration: 9s;
 
         &__header {
             font-size: 3rem;
-            color: $purple;
+            color: utilities.$purple;
         }
 
         &__paragraph {
@@ -134,7 +134,7 @@ $animationDuration: 9s;
     align-items: flex-start;
     justify-content: center;
 
-    @include responsive(tab-port){
+    @include mediaQueries.responsive(tab-port){
         flex-direction: column;
         align-items: center;
     }
@@ -143,14 +143,14 @@ $animationDuration: 9s;
         padding: 0 2em 3em 2em;
         width: 40%;
 
-        @include responsive(tab-port){
+        @include mediaQueries.responsive(tab-port){
             width: 70%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        @include responsive(phone) {
+        @include mediaQueries.responsive(phone) {
             width: 80%;
         }
 
@@ -158,7 +158,7 @@ $animationDuration: 9s;
             font-size: 6rem;
             text-transform: capitalize;  
             
-            @include responsive(tab-port){
+            @include mediaQueries.responsive(tab-port){
                 text-align: center;
             }
         }
@@ -168,7 +168,7 @@ $animationDuration: 9s;
             font-size: 1.8rem;
             line-height: 3rem;  
             
-            @include responsive(tab-port){
+            @include mediaQueries.responsive(tab-port){
                 text-align: justify;
                 margin: 2rem;
             }
@@ -179,7 +179,7 @@ $animationDuration: 9s;
             margin-top: 1.7rem;
             font-size: 2.3rem;  
             
-            @include responsive(tab-port){
+            @include mediaQueries.responsive(tab-port){
             
             }    
         }
@@ -190,7 +190,7 @@ $animationDuration: 9s;
         position: relative;
         top: 9rem; 
         
-        @include responsive(tab-port){
+        @include mediaQueries.responsive(tab-port){
          margin-top: 2rem; 
          position: initial;
          width: 80%;  
@@ -201,14 +201,14 @@ $animationDuration: 9s;
 .read-more{
     margin-top: 8rem;
     padding: 6em 0;
-    background: linear-gradient(-135deg, $purple, $pink);
+    background: linear-gradient(-135deg, utilities.$purple, utilities.$pink);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__header {
         text-transform: uppercase;
-        font-size: $sectionTitleSize;
+        font-size: utilities.$sectionTitleSize;
         text-align: center;
         color: white;    
     }
@@ -220,7 +220,7 @@ $animationDuration: 9s;
         margin-top: 4rem;
         max-width: 150rem;
 
-        @include responsive(tab-port){
+        @include mediaQueries.responsive(tab-port){
             flex-direction: column;
             align-items: center;
         }
@@ -238,13 +238,13 @@ $animationDuration: 9s;
             box-shadow: 0 0 1rem 0.5rem #575A89;
             margin: 1.5rem;
 
-            @include responsive(tab-port){
+            @include mediaQueries.responsive(tab-port){
                 width: 80%;
                 flex-direction: row;
                 min-height: auto;
             }
 
-            @include responsive(phone) {
+            @include mediaQueries.responsive(phone) {
                 flex-direction: column;
             }
 
@@ -252,14 +252,14 @@ $animationDuration: 9s;
                 width: 85%;
                 border-radius: 5px; 
                 
-                @include responsive(tab-port) {
+                @include mediaQueries.responsive(tab-port) {
                     width: 50%;
                     flex-shrink: 2; 
                     object-fit: cover;
                     object-position: center;      
                 }
 
-                @include responsive(phone) {
+                @include mediaQueries.responsive(phone) {
                     width: 85%;
                 }
             }
@@ -271,7 +271,7 @@ $animationDuration: 9s;
     
                 &__header {
                     margin-top: 2rem;
-                    font-size: $smallHeader;
+                    font-size: utilities.$smallHeader;
                     text-transform: capitalize;
                     text-align: center;
                     letter-spacing: 0.2rem;
@@ -279,7 +279,7 @@ $animationDuration: 9s;
                     display: flex;
                     align-items: center;
 
-                    @include responsive(tab-port) {
+                    @include mediaQueries.responsive(tab-port) {
                         min-height: auto;
                     }
                 }
@@ -288,7 +288,7 @@ $animationDuration: 9s;
                     margin-top: 20px;
                     overflow: hidden;
                     text-align: justify;
-                    font-size: $normalText;       
+                    font-size: utilities.$normalText;       
                     padding-left: 1em;
                     padding-right: 1em;
                     line-height: 2rem;
@@ -312,7 +312,7 @@ $animationDuration: 9s;
 
     &__header {
         text-transform: uppercase;
-        font-size: $sectionTitleSize;
+        font-size: utilities.$sectionTitleSize;
         text-align: center;    
     }
 
@@ -322,7 +322,7 @@ $animationDuration: 9s;
         max-width: 120rem;
         justify-content: space-between;
 
-        @include responsive(tab-port){
+        @include mediaQueries.responsive(tab-port){
             flex-direction: column;
             align-items: center;
         }
@@ -336,14 +336,14 @@ $animationDuration: 9s;
             padding: 0 2em 3em 2em;
             border-radius: 20px;
 
-            @include responsive(tab-port) {
+            @include mediaQueries.responsive(tab-port) {
                 flex-direction: row;
                 width: 80%;
                 margin: 1.5rem;
                 padding: 2em;
             }
 
-            @include responsive(phone){
+            @include mediaQueries.responsive(phone){
                 flex-direction: column;
                 width: 100%;
                 margin-top: 6rem;
@@ -363,14 +363,14 @@ $animationDuration: 9s;
                 bottom: 5rem;
                 border: 5px solid rgb(175, 175, 175);
 
-                @include responsive(tab-port) {
+                @include mediaQueries.responsive(tab-port) {
                     bottom: 0;
                     right: 10rem;
                     width: 30rem;
                     height: 30rem;
                 }
 
-                @include responsive(phone) {
+                @include mediaQueries.responsive(phone) {
                     bottom: 5rem;
                     right: 0;
                 }
@@ -381,29 +381,29 @@ $animationDuration: 9s;
                 flex-direction: column;
                 align-items: center;
 
-                @include responsive(tab-port) {
+                @include mediaQueries.responsive(tab-port) {
                     max-height: 90%;
                     margin: 2rem 0;
                     position: relative;
                     right: 5rem;
                 }
 
-                @include responsive(phone) {
+                @include mediaQueries.responsive(phone) {
                     position: initial;
                     margin: 0;
                 }
 
                 &__name {
-                    font-size: $smallHeader;
+                    font-size: utilities.$smallHeader;
                     margin-top: -3rem;
                     text-align: center;
                     letter-spacing: 0.2rem;
 
-                    @include responsive(tab-port) {
+                    @include mediaQueries.responsive(tab-port) {
                         margin-top: 0;
                     }
 
-                    @include responsive(phone) {
+                    @include mediaQueries.responsive(phone) {
                         margin-top: -3rem;
                     }
                 }
@@ -419,9 +419,9 @@ $animationDuration: 9s;
                     width: 70%;
                     text-align: center;
                     line-height: 2.5rem;
-                    font-size: $normalText;
+                    font-size: utilities.$normalText;
 
-                    @include responsive(tab-port) {
+                    @include mediaQueries.responsive(tab-port) {
                         width: 100%;
                     }
                 }
@@ -453,7 +453,7 @@ $animationDuration: 9s;
         padding: 4em;
         border-radius: 20px;
 
-        @include responsive(phone) {
+        @include mediaQueries.responsive(phone) {
             margin: 2rem;
         }
         
@@ -478,13 +478,13 @@ $animationDuration: 9s;
             label {
                 text-transform: capitalize;
                 margin-top: 2rem;
-                font-size: $normalText;
+                font-size: utilities.$normalText;
                 margin-bottom: 0.5rem;
                 line-height: 2.3rem;            
             }
 
             input {
-                font-size: $normalText;
+                font-size: utilities.$normalText;
                 padding-left: 1em;
                 
                 &[type="text"],
@@ -509,7 +509,7 @@ $animationDuration: 9s;
 
             select {
                 height: 3rem;
-                font-size: $normalText;
+                font-size: utilities.$normalText;
                 padding-left: 0.5em;            
             }
 
@@ -532,7 +532,7 @@ $animationDuration: 9s;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid $purple;
+    border: 3px solid utilities.$purple;
     animation: pulse 4s infinite;
     transition: transform 0.2s linear;
 
@@ -545,11 +545,11 @@ $animationDuration: 9s;
         transform: translateY(-0.4rem);
 
         #front-bubble {
-            fill: $pink;
+            fill: utilities.$pink;
         }
 
         #back-bubble {
-            fill: $purple;
+            fill: utilities.$purple;
         }
     }
 
@@ -560,7 +560,7 @@ $animationDuration: 9s;
 }
 
 @mixin box-shadow($blur, $spread) {
-    box-shadow: 0 0 $blur $spread $purple;
+    box-shadow: 0 0 $blur $spread utilities.$purple;
 }
 
 @keyframes pulse {

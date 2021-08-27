@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Teko:wght@500&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -147,60 +146,6 @@ button:hover, input[type=submit]:hover {
 }
 .header__nav__list__item:hover {
   transform: scale(1.1);
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-html {
-  font-size: 62.5%;
-}
-@media only screen and (max-width: 900px) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-body {
-  width: 100%;
-}
-
-h2, h3, h4, button, a {
-  font-family: "Alumni Sans", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-button, input[type=submit] {
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  padding: 0.7em;
-  border-radius: 5px;
-  background: #575A89;
-  border: none;
-  color: white;
-  text-transform: capitalize;
-  transition: transform 0.2s ease;
-}
-button:hover, input[type=submit]:hover {
-  cursor: pointer;
-  transform: scale(0.98);
 }
 
 .roger {
