@@ -4,7 +4,7 @@
   
 ## 🔗 Link
   
-  Check it out here: [Intechnify](https://countrytrivia.netlify.app/)
+  Check it out here: [Intechnify](https://intechnify.netlify.app/)
 
 ## 📖 About
 
