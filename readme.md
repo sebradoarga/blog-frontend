@@ -1,6 +1,10 @@
 <h1 align="center">HTML & SASS Front End Project</h1>
 
 <p align="center"><img src="./assets/images/github-preview.png" alt="image preview of country trivia" align="center"><p>
+  
+## 🔗 Link
+  
+  Check it out here: [Intechnify](https://countrytrivia.netlify.app/)
 
 ## 📖 About
 
@@ -8,9 +12,9 @@ This was one of the first projects I built at Integrify. The task was building a
 
 ## ✨ Focus Points
 
-- **Accessibility** (i.e. Semantic HTML, ARIA attributes, image alts )
-- **Responsiveness**
-- **Animation**
+- ♿ **Accessibility** (i.e. Semantic HTML, ARIA attributes, image alts )
+- 📱 **Responsiveness**
+- 🎥 **Animation**
 
 ## 🔧 Built With
 
