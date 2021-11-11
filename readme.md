@@ -1,14 +1,21 @@
-# Accessibility Assignment
+<h1 align="center">HTML & SASS Front End Project</h1>
 
-You need to create a tech blog website. Reference layout can be found here: [Figma design](https://www.figma.com/file/fyN3JrM4xQQJpD7TWwvmTg/frame?node-id=0%3A1)
+<p align="center"><img src="./assets/images/github-preview.png" alt="image preview of country trivia" align="center"><p>
 
-You do not need to strictly follow the design, take it for reference only and you can be creative.
-All images can be put inside `assets/images`. There are already some images in there that you can use if you'd like or replace them with your own
+## About
 
-Tips:
+This was one of the first projects I built at Integrify. The task was building and styling a template for a blog, and it aimed to teach best practices for a more accessible front-end, as well as give us a chance to practice SASS and animation.
 
-1. You can create a link between different pages of your website with the `<a>` tag. More details here: [Multi-page navigation](https://www.w3.org/wiki/Creating_multiple_pages_with_navigation_menus)
+## Focus Points
 
-2. Use **semantic html tags** (can be found in slide) to divide your html body into different sections for accessibility
+- **Accessibility** (i.e. Semantic HTML, ARIA attributes, image alts )
+- **Responsiveness**
+- **Animation**
 
-3. Focus on the html structure and accessibility, not css
+## 🔧 Built With
+
+- **HTML**
+
+## 🖌️ Styled With
+
+- **SASS**
